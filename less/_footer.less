@@ -1,0 +1,236 @@
+// main: style.less
+
+.footer {
+  max-width: 100%;
+  background-color: #fff;
+
+  &__title {
+    padding-top: 75px;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__collection {
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        font-family: "Open Sans - Semibold";
+        padding-top: 47px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        a {
+          font-family: OpenSans;
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 600;
+          color: #404040;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    ul {
+      padding-top: 51px;
+      padding-bottom: 51px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    width: 53px;
+    height: 53px;
+    border: 2px solid #ecebed;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  &__icon:hover {
+    box-shadow: -2px 8px 19px 1px rgba(207, 207, 208, 0.75);
+    background-color: #9577f7;
+    border: #9577f7;
+    background-image: linear-gradient(
+      27deg,
+      #8c84f9 0%,
+      #9b6df5 99%,
+      #9b6df5 100%
+    );
+  }
+
+  &__icon-1 {
+    padding: 13px 17px 17px 19px;
+    .fa-facebook {
+      color: #555555;
+    }
+    .fa-facebook:hover {
+      color: #fff;
+    }
+  }
+
+  &__icon-2 {
+    padding: 13px 9px 20px 16px;
+    .fa-twitter {
+      color: #555555;
+    }
+    .fa-twitter:hover {
+      color: #fff;
+    }
+  }
+
+  &__icon-3 {
+    padding: 12px 26px 20px 16px;
+    .fa-instagram {
+      color: #555555;
+    }
+    .fa-instagram:hover {
+      color: #fff;
+    }
+  }
+
+  &__icon-4 {
+    padding: 13px 13px 21px 13px;
+    .fa-google-plus {
+      color: #555555;
+    }
+    .fa-google-plus:hover {
+      color: #fff;
+    }
+  }
+
+  &__info {
+    max-width: 100%;
+    height: 65px;
+    background-color: #f6f5f7;
+    p {
+      padding-top: 27px;
+      text-align: center;
+      color: #777777;
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (width: 1604px) {
+  .main {
+    &__newsletter-bgtext {
+      position: absolute;
+      top: 140px;
+      left: 310px;
+      text-align: center;
+      color: #fefefe;
+      opacity: 0.04;
+      font-size: 0px;
+      font-weight: 400;
+      font-size: 150px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    &__newsletter-input {
+      height: 71px;
+      padding-top: 84px;
+      text-align: center;
+      input {
+        width: 600px;
+        height: 71px;
+        font-size: 15px;
+        padding: 23px 200px 23px 27px;
+      }
+      div {
+        margin-top: -65px;
+        margin-left: 390px;
+      }
+      button {
+        border-radius: 60px;
+        width: 198px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .main {
+    &__newsletter-input {
+      height: 60px;
+      padding-top: 84px;
+      text-align: center;
+      input {
+        width: 400px;
+        height: 60px;
+        font-size: 15px;
+        padding: 13px 200px 13px 27px;
+      }
+      div {
+        margin-top: -58px;
+        margin-left: 290px;
+      }
+      button {
+        border-radius: 60px;
+        width: 99px;
+        height: 55px;
+        padding: 19px 32px 22px 30px;
+        color: #fffefe;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer {
+    &__collection {
+      ul {
+        li {
+          padding-right: 15px;
+          padding-left: 15px;
+          @media (max-width: 430px) {
+            padding-right: 5px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    &__icon {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .main {
+    &__newsletter-input {
+      height: 60px;
+      padding-top: 84px;
+      text-align: center;
+      input {
+        width: 250px;
+        height: 60px;
+        font-size: 10px;
+        padding: 13px 50px 13px 18px;
+      }
+      div {
+        margin-top: -58px;
+        margin-left: 140px;
+      }
+      button {
+        border-radius: 60px;
+        width: 99px;
+        height: 55px;
+        padding: 19px 32px 22px 30px;
+        color: #fffefe;
+        font-size: 15px;
+      }
+    }
+  }
+}

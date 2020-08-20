@@ -1,0 +1,268 @@
+// main: style.less
+
+body {
+  font-family: "Open Sans";
+}
+
+.wraper {
+}
+
+.container {
+  overflow: hidden;
+  max-width: 1469px;
+  margin: 0 auto;
+
+  @media (max-width: 1216px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: 927px) {
+    max-width: none;
+    padding: 10px;
+  }
+}
+
+.header {
+  padding: 0px 0 260px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background: url("../img/big_bg-2.png") center/ cover no-repeat;
+  position: relative;
+
+  @media (max-width: 927px) {
+    padding: 0px 0 120px 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: url("../img/girl-bg.png") 12% no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__column-1 {
+  }
+
+  &__bg-1 {
+    justify-self: flex-start;
+    background: url("../img/header__bg-1.png") center / cover no-repeat;
+    width: 300px;
+    height: 125px;
+  }
+
+  &__title {
+    margin-top: 80px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 120px;
+    margin-left: 120px;
+
+    @media (max-width: 927px) {
+      margin-top: 50px;
+      font-size: 30px;
+      line-height: 80px;
+      margin-left: 80px;
+    }
+
+    @media (max-width: 725px) {
+      display: none;
+    }
+  }
+
+  &__form {
+  }
+
+  &__page-big-titles {
+  }
+}
+
+.column-1 {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 725px) {
+      justify-content: center;
+    }
+  }
+}
+
+&__myforms {
+}
+
+.form {
+  @media (max-width: 1216px) {
+    margin: 30px 100px 0 0;
+    max-width: 200px;
+    padding: 12px 0;
+    background-color: #ffffff00;
+    box-shadow: none;
+  }
+
+  @media (max-width: 927px) {
+    margin: 20px 80px 0 0;
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  z-index: 2;
+  margin: 30px 220px 0 0;
+  position: relative;
+  padding: 24px 0;
+  width: 371px;
+  box-shadow: -1px 5px 24px 1px rgba(189, 227, 239, 0.75);
+  background-color: #ffffff;
+  color: #151515;
+  font-family: "Open Sans - Semibold";
+  display: flex;
+  justify-content: center;
+  border-radius: 60px;
+
+  label {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    @media (max-width: 1216px) {
+      left: -20%;
+      top: 37%;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__search {
+    text-align: center;
+    border-right: 1px solid rgba(189, 227, 239, 0.75);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 100%;
+
+    @media (max-width: 1216px) {
+      margin-right: 5px;
+      border-radius: 60px;
+      padding: 5px;
+    }
+  }
+
+  &__coletion {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 100%;
+
+    @media (max-width: 1216px) {
+      border-radius: 60px;
+      padding: 8px;
+    }
+  }
+}
+
+.big-titles {
+  margin-right: 55px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+
+  // align-self: flex-start;
+  @media (max-width: 1216px) {
+    margin-right: 25px;
+  }
+
+  &__one {
+    color: #000;
+    font-family: Roboto;
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 120px;
+    /* Text style for "S, ummer" */
+    color: #090000;
+
+    @media (max-width: 1216px) {
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 80px;
+    }
+
+    @media (max-width: 927px) {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+  }
+
+  &__collection {
+    display: block;
+    color: #e25e5e;
+  }
+
+  &__two {
+    color: #fcfcfc;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 120px;
+    text-transform: uppercase;
+    /* Text style for "2, 5%" */
+    color: #fbf934;
+
+    @media (max-width: 1216px) {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 80px;
+    }
+  }
+
+  &__off {
+    color: #ffffff;
+  }
+
+  &__button {
+    span {
+      color: #ae94fc;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+
+    max-width: 202px;
+    padding: 22px 0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 5px 24px 1px rgba(189, 227, 239, 0.75);
+    background-color: #fcfcfc;
+    color: #151515;
+    font-family: "Open Sans - Semibold";
+    font-size: 20px;
+    font-weight: 400;
+
+    @media (max-width: 1216px) {
+      padding: 10px 0;
+      max-width: 150px;
+    }
+
+    // line-height: 26px;
+    /* Text style for "D, etails" */
+    // /* Text style for "" */
+    // color: #7048e2;
+    // font-family: "Font Awesome";
+    // font-size: 18px;
+  }
+}
